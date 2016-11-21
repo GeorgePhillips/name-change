@@ -1,0 +1,14 @@
+---
+layout: page
+---
+
+<header{% if page.title %} class="sub-page-hero {{ page.url | slugify }}"{% endif %}>
+	<div class="container">
+		<div class="hero-content">
+			<h1><a href="/">{{ site.title }}</a>{% if page.type %} / <a href="/{{ page.type }}/">{{ page.type | capitalize }}</a>{% endif %}</h1>
+			{% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
+		</div>
+	</div>
+</header>
+
+{{ content }}

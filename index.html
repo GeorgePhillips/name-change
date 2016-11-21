@@ -1,0 +1,11 @@
+---
+---
+
+<h2>Welcome to Play Volleyball NZ</h2>
+
+<div class="map">
+	{% include_relative img/map-original.svg %}
+	{% for region in site.regions %}
+		<div class="pointer {{ region.name | slugify }}">{{ region.name }}</div>
+	{% endfor %}
+</div>

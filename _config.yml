@@ -1,0 +1,22 @@
+title: Play Volleyball New Zealand
+description: Find where to play volleyball around New Zealand
+author: George Phillips <georgepaulphillips@gmail.com>
+
+collections:
+  regions:
+    output: true
+    permalink: /:collection/:path/
+  clubs:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+level:
+- social
+- intermediate
+- competitive

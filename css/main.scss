@@ -1,0 +1,22 @@
+---
+---
+
+$base-map-height: 2192.553;
+$base-map-width: 1718.269;
+
+@import
+	"layout",
+	"map";
+
+{% for region in site.regions %}
+	$absolute-x: {{ region.map.x }};
+	$percentage-x: percentage($absolute-x / $base-map-width);
+
+	$absolute-y: {{ region.map.y }};
+	$percentage-y: percentage($absolute-y / $base-map-height);
+
+	.pointer.{{ region.name | slugify }} {
+		left: $percentage-x;
+		top: $percentage-y;
+	}
+{% endfor %}

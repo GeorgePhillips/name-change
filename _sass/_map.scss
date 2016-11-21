@@ -1,0 +1,38 @@
+svg .island,
+svg .region-divider,
+svg .body-of-water {
+	stroke: #000;
+}
+
+svg .island {
+	fill: #FFF;
+}
+
+svg .body-of-water {
+	fill: #024560;
+}
+.map {
+	display: inline-block;
+	position: relative;
+	max-width: 100%;
+}
+
+svg {
+	box-sizing: border-box;
+	width: auto;
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+
+.pointer {
+	position: absolute;
+	content: "";
+	display: block;
+	float: left;
+	width: 5%;
+	height: 4%;
+	border-radius: 100%;
+	background: #fff;
+	margin: 0 10px 0 0;
+}
